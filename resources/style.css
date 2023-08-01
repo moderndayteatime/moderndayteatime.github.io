@@ -5,38 +5,74 @@
 }
 
 html {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;;
 }
 
 header {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    height: 50px;
-    background-color: white;
-}
-
-#my-name {
-    text-decoration: underline;
+    height: 56px;
+    background-color: none;
+    top: 0%;
     width: 100%;
-    margin: 0%;
-    text-align: center;
-    
-}
-nav {
-    position: absolute;
-    margin-right: 5%;
+    position: fixed;
+    z-index: 99;
+    transition: all 1s;
 }
 
-nav li {
-    list-style-type: none;
+a #my-name {
+    text-decoration: underline;
+    height: 54px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+    font-size: 32px;
+}
+
+nav {
+    display: inline;
+    overflow: hidden;
 }
 
 #mobile-nav {
     font-size: 300%;
+    position: absolute;
+    text-align: right;
+    padding-right: 5%;
 }
 
 nav a {
     text-decoration: none;
     color: black;
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+.section {
+    height: 900px;
+}
+
+#landing-page {
+    margin-top: 56px;
+    padding-top: 5px;
+    z-index: -99;
+}
+
+#intro-video {
+    position: absolute;
+    object-position: 50% auto;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-width: 100%;
+}
+
+#landing-page-content {
+    display: flex;
+    
+}
+#landing-page-content h2{
+    z-index: 1;
+}
+#about-me {
+    
 }
